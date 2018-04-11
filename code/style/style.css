@@ -1,0 +1,39 @@
+/*Background*/ 
+body{
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*Font-face*/
+@font-face {
+    font-family: Title;
+    src: url(linowrite.ttf);
+}
+
+.letterTitle{
+	font-family: Title;
+}
+
+@font-face {
+    font-family: contenido;
+    src: url(centyrigotic.ttf);
+}
+
+.contenido{
+	font-family: contenido;
+}
+
+/*Animacion de Parpadeo*/
+@keyframes parpadear {
+    0%   {opacity: 1;}
+    10%  {opacity: 0;}
+    90%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.parpadeo{
+	animation-name: parpadear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
